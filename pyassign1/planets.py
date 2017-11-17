@@ -1,1 +1,61 @@
+import turtle
+turtle.screensize(1000,1000, "white")
+s=turtle.Pen()
+j=turtle.Pen()
+d=turtle.Pen()
+h=turtle.Pen()
+m=turtle.Pen()
+t=turtle.Pen()
+sun=turtle.Pen()
+colours=["yellow","blue","green","red","black","orange","cyan"]
+s.up()
+j.up()
+d.up()
+h.up()
+m.up()
+t.up()  #tibi
+s.shape('circle')
+j.shape('circle')
+d.shape('circle')
+h.shape('circle')
+m.shape('circle')
+t.shape('circle')  #huayuan
+sun.shape('circle')
+sun.pencolor(colours[0])
+s.pencolor(colours[1])
+j.pencolor(colours[2])
+d.pencolor(colours[3])
+h.pencolor(colours[4])
+m.pencolor(colours[5])
+t.pencolor(colours[6])
+sun.fillcolor( colours[0] )#gaiyanse
+s.fillcolor( colours[1] )
+j.fillcolor( colours[2] )
+d.fillcolor( colours[3] )
+h.fillcolor( colours[4] )
+m.fillcolor( colours[5] )
+t.fillcolor( colours[6] )
+s.setposition(50,0)
+j.setposition(70,0)
+d.setposition(100,0)
+h.setposition(150,0)
+m.setposition(220,0)
+t.setposition(300,0)#gaiweizhi
+s.down()
+j.down()
+d.down()
+h.down()
+m.down()
+t.down()                       #fangxia  
+import math
+for i in range (10000):
+    a=math.cos(math.degrees(i/1000))
+    b=math.sin(math.degrees(i/1000))
+    s.goto(50*a, 50*b)
+    j.goto(90*a-20,75*b)
+    d.goto(150*a-50,135*b)
+    h.goto(190*a-40,150*b)
+    m.goto(240*a-20,180*b)
+    t.goto(300*a,250*b)
+    
 
